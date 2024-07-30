@@ -1,8 +1,16 @@
+import { Box, Heading } from '@chakra-ui/react';
+
 function DefaultPage() {
   return (
-    <div>
-      <div>Default Page</div>
-    </div>
+    <Box
+      w="100%"
+      h="100vh"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Heading as="h1">Default Page</Heading>
+    </Box>
   );
 }
 
