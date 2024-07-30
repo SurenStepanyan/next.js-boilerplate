@@ -1,4 +1,5 @@
 import './globals.css';
+import CustomChakraProvider from '@/providers/chakra-ui/CustomChakraProvider';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Next.js boilerplate</title>
-      <body>{children}</body>
+      <body>
+        <CustomChakraProvider>{children}</CustomChakraProvider>
+      </body>
     </html>
   );
 }
